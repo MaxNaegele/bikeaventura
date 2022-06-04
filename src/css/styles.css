@@ -1,0 +1,316 @@
+:root {
+    --primary: #EB1CCC;
+    --secondary: #95989A;
+    --tertiary: #f2f2f2;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  respeitar a largura maxima do elemento pai */
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-brand p {
+    margin-top: -7px;
+    font-size: 14px;
+}
+
+.navbar-brand b {
+    padding-top: 10px;
+}
+
+.navbar-brand img {
+    width: 60px;
+    margin-right: 5px;
+}
+
+
+/* Styles section main */
+#main {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)),
+        url("/img/slides/img1.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    max-width: 350px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#disclaimer p {
+    font-size: 20px;
+}
+
+#disclaimer {
+    margin-bottom: 12em;
+    margin-left: 3em;
+}
+
+
+/* Styles do formulario */
+#contact {
+    display: flex;
+    background-color: var(--tertiary);
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.description-contact h3 {
+    color: var(--primary);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.description-contact p {
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+.contact-users {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 40%;
+    border-radius: 2%;
+}
+
+.contact-users p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6em;
+}
+
+.form-group label {
+    color: var(--text-secondary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Section reides */
+#rides {
+    background-color: var(--tertiary);
+    padding-bottom: 4em;
+}
+
+#rides h2 {
+    text-align: center;
+    padding: 2em 2em;
+    font-weight: 500;
+}
+
+.rides-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.route {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #d7d7d7;
+    background-color: var(--text-color);
+
+}
+
+.route:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.route div img {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.route-description {
+    padding: 5px;
+}
+
+.route-description h3 {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.route-description p {
+    color: var(--text-tertiary);
+}
+
+/* Section  about */
+
+.location {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .4)),
+        url("/img/Fundo/img3.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+}
+
+.address {
+    display: flex;
+}
+
+.address i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+.address,
+.about-location {
+    max-width: 30%;
+}
+
+.address-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.about-location h3 {
+    color: var(--primary);
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.about-location p {
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+/* Footer */
+.footer {
+    margin-top: 1.5em;
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+.footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+/* Mobile  */
+@media (max-width: 450px) {
+
+    /* main */
+    #main {
+        margin-top: 6em;
+    }
+
+    /* rides */
+    .rides-main {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .route {
+        margin-bottom: 2em;
+    }
+
+    /* about */
+    .location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    .address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .address i {
+        margin: .3em 0;
+    }
+
+    .about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .about-location p {
+        margin: 0 1em;
+    }
+
+    /* contact */
+    #contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-users {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* footer */
+    .footer {
+        margin-bottom: 1em;
+    }
+}

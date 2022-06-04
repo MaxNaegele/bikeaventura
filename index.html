@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Bike Aventura:: Página Principal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+   
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta
+      name="description"
+      content="Grupo de amigos apaixonados por ciclismo e aventuras memoráveis..."
+    />
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+  <body>
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#main">
+          <img src="/img/logos/logo.svg" />
+          <b>
+            Bike
+            <p>Aventura</p>
+          </b>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#rides">Trajetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#photos">Melhores Fotos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="main">
+      <div id="disclaimer">
+        <h2>Bike Aventura</h2>
+        <p class="about-description">
+          Amigos, bike, novos lugares e muitas <b>muitas aventuras...</b>
+        </p>
+      </div>
+    </section>
+
+    <section id="rides">
+      <h2>Nossos trajetos</h2>
+      <div class="rides-main">
+        <div class="route">
+          <div class="route-img">
+            <img src="/img/routes/img1.jpeg" />
+          </div>
+          <div class="route-description">
+            <h3>Cascata Da Usina</h3>
+            <p><b>Distancia:</b>30 km <b>Dificuldade:</b>Moderada</p>
+          </div>
+        </div>
+        <div class="route">
+          <div class="route-img">
+            <img src="/img/routes/img2.jpeg" />
+          </div>
+          <div class="route-description">
+            <h3>Cascata Nova Candelária</h3>
+            <p><b>Distancia:</b>30 km <b>Dificuldade:</b>Moderada</p>
+          </div>
+        </div>
+        <div class="route">
+          <div class="route-img">
+            <img src="/img/routes/img3.jpeg" />
+          </div>
+          <div class="route-description">
+            <h3>Cascata Véu da Noiva</h3>
+            <p><b>Distancia:</b>30 km <b>Dificuldade:</b>Moderada</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos"></section>
+
+    <section id="about">
+      <div class="location">
+        <div class="address">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div class="address-details">
+            <p>Três De Maio - RS</p>
+            <p>Para o mundo :)</p>
+          </div>
+        </div>
+        <div class="about-location">
+          <h3>#Respiramos Bike</h3>
+          <p>
+            Eventos sempre realizados em locais prestigiados pelos amantes de
+            Aventura e Bikes, sempre contando com a companhia de verdadeiros
+            amigos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="description-contact">
+        <h3>Quer saber mais sobre nós?</h3>
+        <p>
+          Preencha o formulário com seus dados, adoraremos entrar em contato
+          e fazermos novos amigos...
+        </p>
+      </div>
+
+      <div class="contact-users">
+        <p>
+          Entre em contato com a gente preenchendo o formulário com seus dados.
+        </p>
+        <form>
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              name="name"
+              id="inputName"
+              placeholder="Informe seu nome"
+              class="form-control"
+              value=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="inputEmail"
+              placeholder="Informe seu e-mail"
+              class="form-control"
+              value=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Whatsapp:</label>
+            <input
+              type="text"
+              name="phone"
+              id="inputPhone"
+              placeholder="Informe seu Whatsapp"
+              class="form-control"
+              value=""
+            />
+          </div>
+          <input class="btn" type="button" value="Enviar" />
+        </form>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <h3>Bike Aventura</h3>
+      <p>Pedalar é apreciar momentos inesquecíveis.</p>
+      <p><span>Entre em contato: </span>max.naegele@hotmail.com</p>
+      <p><span>Ou pelo facebook: </span>max.naegele.58</p>
+      <p><span>E sigam-me no Strava: </span>Max Naegele</p>
+      <p>Desenvolvido por <span> TecMax 2022.</span></p>
+    </footer>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
