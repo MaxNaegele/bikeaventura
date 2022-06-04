@@ -38,7 +38,7 @@
 /* Styles section main */
 #main {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)),
-        url("../img/slides/img1.jpeg");
+        url("/img/slides/img1.jpeg");
     background-position: center;
     background-size: cover;
     height: 65vh;
@@ -185,7 +185,7 @@
 
 .location {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .4)),
-        url("../img/Fundo/img3.jpeg");
+        url("/img/Fundo/img3.jpeg");
     background-position: center;
     background-size: cover;
     height: 65vh;
