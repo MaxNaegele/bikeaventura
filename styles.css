@@ -14,6 +14,11 @@
     /*  respeitar a largura maxima do elemento pai */
 }
 
+.nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 .navbar-brand {
     display: flex;
     flex-direction: row;
